@@ -272,4 +272,67 @@ button {
 button:hover, button:active {
   background: #ffcc00; }
 
+img.image {
+  border: solid 1px #fff;
+  width: 100%;
+  margin: 0 0 10px; }
 
+@media only screen and (max-width: 600px) {
+  .tags li {
+    display: inline-block;
+    margin-right: 5px;
+    color: #999999;
+    background: white;
+    padding: 2.5px 5px;
+    font-size: 9.75px; } }
+@media only screen and (min-width: 600px) {
+  .tags li {
+    display: inline-block;
+    margin-right: 10px;
+    color: #999999;
+    background: white;
+    padding: 5px 10px; } }
+
+/* * * * * * * * * * * * * * theme * * * * * * * * * * * * * */
+h1 {
+  font-size: 32.5px; }
+
+h2 {
+  font-size: 26px; }
+
+h3 {
+  font-size: 19.5px; }
+
+h4 {
+  font-size: 16.9px; }
+
+section {
+  padding: 20px;
+  background: #ffe57f;
+  color: #333333;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  border-radius: 10px; }
+  section * {
+    text-shadow: none; }
+  section h1 {
+    font-size: 26px; }
+  section h2 {
+    font-size: 19.5px; }
+  section h3 {
+    font-size: 16.9px; }
+  section a {
+    color: #4681ea; }
+  section a:hover {
+    color: cornflowerblue; }
+
+/* * * * * * * * * * * * * * layout * * * * * * * * * * * * * */
+/* fullsize */
+/* mobile */
+/* * * * * * * * * * * * * * header * * * * * * * * * * * * * */
+/* * * * * * * * * * * * * * nav * * * * * * * * * * * * * */
+/* mobile */
+/* fullsize */
+/* * * * * * * * * * * * * * footer * * * * * * * * * * * * * */

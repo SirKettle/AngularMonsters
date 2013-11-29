@@ -1,16 +1,26 @@
 [
   {
     "id"       : "godzilla",
-    "year"     : 1937,
-    "title"    : "Godzilla - Oh My Oshi",
-    "summary"  : "A big ass lizard",
-    "imageUrl" : "img/monsters/godzilla/thumb.jpg"
+    "year"     : 1954,
+    "title"    : "Godzilla (or Gojira)",
+    "summary"  : "A 164-foot-tall (50-meter-tall) monster reptile with radioactive breath"
   },
   {
     "id"       : "king_kong",
-    "year"     : 1952,
+    "year"     : 1933,
     "title"    : "King Kong",
-    "summary"  : "A big ass monkey",
-    "imageUrl" : "img/monsters/king_kong/thumb.jpg"
+    "summary"  : "A giant gorilla from the tropical location, Skull Island"
+  },
+  {
+    "id"       : "michael_wazowski",
+    "year"     : 2001,
+    "title"    : "Michael Wazowski",
+    "summary"  : "Michael \"Mike\" Wazowski is the deuteragonist of the Monsters, Inc. franchise and the titular protagonist of Mike's New Car. He is Sulley's best friend, roommate, and assistant."
+  },
+  {
+    "id"       : "james_p_sullivan",
+    "year"     : 2001,
+    "title"    : "James P. Sullivan",
+    "summary"  : "James P. \"Sulley\" Sullivan is the main protagonist of the Monsters, Inc. franchise. He is the current CEO of the company and Mike's best friend and roommate."
   }
 ]
