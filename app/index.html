@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en" ng-app="monsterApp">
+  <head>
+    <meta charset="utf-8">
+    <title>Monsters</title>
+    <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+    <!-- key meta -->
+    <meta name="keywords" content="monsters, movies">
+    <meta name="description" content="Monsters in the movies">
+    <meta name="author" content="Thirkettle Brothers">
+    <meta name="copyright" content="Will Thirkettle">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="application-name" content="Monsters">
+    <meta name="msapplication-TileColor" content="#1DD2FF">
+    <meta name="msapplication-TileImage" content="img/icons/144.png">
+    <meta name="fragment" content="!">
+    <link rel="shortcut icon" href="img/favicon.png">
+    <link rel="apple-touch-icon" href="img/icons/57.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/icons/72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/icons/114.png">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="author" href="https://plus.google.com/+WillThirkettle">
+
+    <script src="lib/jquery/jquery-1.10.2.js"></script>
+    <script src="lib/angular/angular.js"></script>
+    <script src="lib/angular/angular-animate.js"></script>
+    <script src="lib/angular/angular-resource.js"></script>
+    <script src="lib/angular/angular-route.js"></script>
+
+    <script src="js/app.js"></script>
+    <script src="js/animations.js"></script>
+    <script src="js/controllers.js"></script>
+    <script src="js/filters.js"></script>
+    <script src="js/services.js"></script>
+  </head>
+
+  <body>
+    <div class="outer-wrapper">
+      <nav></nav>
+      <div class="inner-wrapper">
+        <header>
+          <h1>Monsters</h1>
+          <h2>from the movies</h2>
+        </header>
+        <section ng-view class="view-frame"></section>
+        <footer>
+          <div itemscope itemtype="http://schema.org/LocalBusiness">
+            <p><small>Monsters (v0.1.0) designed and developed by <span itemprop="name">Will Thirkettle</span> &copy; <span id="year"></span></small></p>
+            <p><small>Contact me by email - <span itemprop="email"><a href="mailto:hello@willthirkettle.co.uk">hello@willthirkettle.co.uk</a></span>.</small></p>
+          </div>
+        </footer>
+      </div>
+    </div>
+  </body>
+</html>

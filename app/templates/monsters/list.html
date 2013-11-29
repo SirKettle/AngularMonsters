@@ -1,0 +1,17 @@
+<div>
+  <p>Search: <input ng-model="query"></p>
+  <p>Sort by:
+    <select ng-model="orderProp">
+      <option value="title">Alphabetical</option>
+      <option value="year">Youngest</option>
+    </select>
+  </p>
+  <ul class="monsters">
+    <li ng-repeat="monster in monsters | filter:query | orderBy:orderProp">
+      <a href="#/monsters/{{monster.id}}" class="thumb"><img ng-src="{{phone.imageUrl}}"></a>
+      <h3><a href="#/monsters/{{monster.id}}">{{monster.title}}</a></h3>
+      <small>{{monster.year}}</small>
+      <p>{{monster.summary}}</p>
+    </li>
+  </ul>
+</div>

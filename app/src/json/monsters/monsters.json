@@ -1,0 +1,16 @@
+[
+  {
+    "id"       : "godzilla",
+    "year"     : 1937,
+    "title"    : "Godzilla - Oh My Oshi",
+    "summary"  : "A big ass lizard",
+    "imageUrl" : "img/monsters/godzilla/thumb.jpg"
+  },
+  {
+    "id"       : "king_kong",
+    "year"     : 1952,
+    "title"    : "King Kong",
+    "summary"  : "A big ass monkey",
+    "imageUrl" : "img/monsters/king_kong/thumb.jpg"
+  }
+]

@@ -1,0 +1,23 @@
+{
+  "title"   : "Godzilla - Oh My Oshi",
+  "summary" : "A big ass lizard",
+  "location" : "Tokyo, Japan",
+  "movies" : {
+    "godzilla" : {
+      "title" : "Godzilla",
+      "releaseYear" : "1938",
+      "details" : {
+        "director" : "Unknown",
+        "actors" : [ "A. Man", "Leading Lady", "Some Bloke" ]
+      }
+    },
+    "godzilla_returns" : {
+      "title" : "Godzilla returns",
+      "releaseYear" : "1947",
+      "details" : {
+        "director" : "Unknown",
+        "actors" : [ "A. Man", "Leading Lady", "Some Bloke" ]
+      }
+    }
+  }
+}

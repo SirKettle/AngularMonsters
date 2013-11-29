@@ -1,0 +1,15 @@
+{
+  "title"   : "King Kong",
+  "summary" : "A big ass monkey",
+  "location" : "Unknown Tropical Island",
+  "movies" : {
+    "king_kong" : {
+      "title" : "King Kong",
+      "releaseYear" : "1952",
+      "details" : {
+        "director" : "Unknown",
+        "actors" : [ "A. Man", "Leading Lady", "Some Bloke" ]
+      }
+    }
+  }
+}
