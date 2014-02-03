@@ -1,7 +1,7 @@
 {
   "year"     : 2001,
   "title"    : "James P. Sullivan",
-  "summary"  : "James P. "Sulley" Sullivan is the main protagonist of the Monsters, Inc. franchise. He is the current CEO of the company and Mike's best friend and roommate.",
+  "summary"  : "James P. \"Sulley\" Sullivan is the main protagonist of the Monsters, Inc. franchise. He is the current CEO of the company and Mike's best friend and roommate.",
   "nickname" : "Sulley",
   "location" : "Monstropolis",
   "movies" : {
@@ -12,6 +12,6 @@
     "monsters_university" : {
       "title"       : "Monsters University",
       "releaseYear" : 2013
-    },
+    }
   }
 }

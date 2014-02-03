@@ -8,28 +8,14 @@ monsterControllers.controller('MonsterListCtrl', ['$http', '$scope', 'Monster',
   function ($http, $scope, Monster) {
     $scope.monsters = Monster.query();
     $scope.orderProp = 'year';
-
-
-
-    $http.get('/app/src/data/getMovies.php').
-      success(function(data, status, headers, config) {
-          //what do I do here?
-          debugger;
-      }).
-      error(function(data, status, headers, config) {
-          $scope.error = true;
-      });
   }]);
 
 monsterControllers.controller('MonsterDetailCtrl', ['$http', '$scope', '$routeParams', 'Monster',
   function ($http, $scope, $routeParams, Monster) {
     $scope.monster = Monster.get({monsterId: $routeParams.monsterId}, function (monster) {
       // $scope.mainImageUrl = monster.images[0];
+      debugger;
     });
-
-    $scope.setImage = function(imageUrl) {
-      // $scope.mainImageUrl = imageUrl;
-    }
   }]);
 
 

@@ -1,7 +1,7 @@
 {
   "year"     : 2001,
   "title"    : "Michael Wazowski",
-  "summary"  : "Michael "Mike" Wazowski is the deuteragonist of the Monsters, Inc. franchise and the titular protagonist of Mike's New Car. He is Sulley's best friend, roommate, and assistant."
+  "summary"  : "Michael \"Mike\" Wazowski is the deuteragonist of the Monsters, Inc. franchise and the titular protagonist of Mike's New Car. He is Sulley's best friend, roommate, and assistant.",
   "nickname" : "Mike",
   "location" : "Monstropolis",
   "movies" : {
@@ -12,6 +12,6 @@
     "monsters_university" : {
       "title"       : "Monsters University",
       "releaseYear" : 2013
-    },
+    }
   }
 }

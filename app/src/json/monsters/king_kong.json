@@ -1,7 +1,7 @@
 {
   "year"     : 1933,
   "title"    : "King Kong",
-  "summary"  : "A giant gorilla from the tropical location, Skull Island"
+  "summary"  : "A giant gorilla from the tropical location, Skull Island",
   "location" : "Skull Island",
   "movies" : {
     "king_kong" : {
@@ -23,6 +23,6 @@
     "king_kong_2005" : {
       "title" : "King Kong",
       "releaseYear" : 2005
-    },
+    }
   }
 }
