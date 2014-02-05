@@ -8,49 +8,49 @@ monsterControllers.controller('MonsterListCtrl', ['$http', '$scope', 'Monster',
   function ($http, $scope, Monster) {
     $scope.monsters = Monster.query();
     $scope.orderProp = 'year';
-
-
-
-    $http.get('/app/src/data/getMovies.php').
-      success(function(data, status, headers, config) {
-          //what do I do here?
-          debugger;
-      }).
-      error(function(data, status, headers, config) {
-          $scope.error = true;
-      });
   }]);
 
 monsterControllers.controller('MonsterDetailCtrl', ['$http', '$scope', '$routeParams', 'Monster',
   function ($http, $scope, $routeParams, Monster) {
-    $scope.monster = Monster.get({monsterId: $routeParams.monsterId}, function (monster) {
-      // $scope.mainImageUrl = monster.images[0];
-    });
 
-    $scope.setImage = function(imageUrl) {
-      // $scope.mainImageUrl = imageUrl;
-    }
+    $scope.images = [];
+
+    $scope.monster = Monster.get({monsterId: $routeParams.monsterId}, function (aMonster) {
+
+      angular.forEach($scope.monster.images, function (url) {
+        // $scope.images.push("");
+        $('<img src="' + url + '" />').load(function () {
+          $scope.$apply(function () {
+            $scope.images.push(url);
+          });
+        });
+      });
+
+    });
   }]);
 
+monsterControllers.directive('loadingImage', function () {
+  return {
+    restrict: 'E',
+    // replace : true,
+    // controller : 'LoadingCtrl',
+    template : "<div class=\"image image-{{loaded}}\" style=\"background-image:url({{url}})\"></div>"
+  };
+});
 
+// monsterControllers.controller('LoadingCtrl', ['$scope',
+//   function ($scope) {
+//     $scope.loaded = 'false';
+//     $scope.loadFile = function () {
+//         return url;
+//       var url = this.url;
 
+//       $('<img src="' + url + '" />').load(function () {
 
-// var movieAPIControllers = angular.module('movieAPIControllers', []);
-
-// movieAPIControllers.controller('MovieSearchCtrl', ['$scope', 'MovieSearch',
-//   function ($scope, MovieSearch) {
-//     $scope.movie = MovieSearch.query();
-//     $scope.orderProp = 'year';
-//   }]);
-
-// movieAPIControllers.controller('MovieDetailCtrl', ['$scope', '$routeParams', 'Movie',
-//   function ($scope, $routeParams, Movie) {
-//     $scope.movie = Monster.get({movieId: $routeParams.movieId}, function (movie) {
-//       // $scope.mainImageUrl = monster.images[0];
-//       debugger;
-//     });
-
-//     $scope.setImage = function(imageUrl) {
-//       // $scope.mainImageUrl = imageUrl;
-//     }
+//         $scope.loaded = 'true';
+//         alert('sdhfb');
+//         return url;
+        
+//       });
+//     };
 //   }]);

@@ -21,8 +21,8 @@
 //----------------------------------*/
 
 @import 'global/reset';
-// @import 'global/defaults';
-// @import 'global/layout';
+@import 'global/defaults';
+@import 'global/layout';
 
 // //----------------------------------*\
 // // PARTIALS
@@ -36,7 +36,7 @@
 // // OBJECTS & MODULES
 // //----------------------------------*/
 
-// @import 'modules/monsters';
+@import 'modules/monsters';
 
 // //----------------------------------*\
 // // VENDOR

@@ -1,1 +1,14 @@
 
+.detail-view {
+	li {
+		float: left;
+
+		.image {
+			width:200px;
+			height:200px;
+			background:black no-repeat center;
+			background-size:cover;
+			margin:0 $gutterWidth $gutterWidth 0;
+		}
+	}
+}

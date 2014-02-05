@@ -4,6 +4,12 @@
 /* fullsize */
 
 @media only screen and (min-width: $widthCutOff) {
+
+	.outer-wrapper {
+		width: 90%;
+		margin: 20px auto 20px;
+	}
+
 }
 
 /* mobile */

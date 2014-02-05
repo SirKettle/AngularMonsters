@@ -5,12 +5,9 @@
 var monsterApp = angular.module('monsterApp', [
   'ngRoute',
   // 'monsterAnimations',
-
   'monsterControllers',
-  // 'movieAPIControllers',
   'monsterFilters',
   'monsterServices'
-  // 'movieAPIServices'
 ]);
 
 monsterApp.config(['$routeProvider',
@@ -24,14 +21,6 @@ monsterApp.config(['$routeProvider',
         templateUrl: 'templates/monsters/detail.html',
         controller: 'MonsterDetailCtrl'
       }).
-      // when('/movies', {
-      //   templateUrl: 'templates/movies/search.html',
-      //   controller: 'MovieSearchCtrl'
-      // }).
-      // when('/movies/:movieId', {
-      //   templateUrl: 'templates/movies/detail.html',
-      //   controller: 'MovieDetailCtrl'
-      // }).
       otherwise({
         redirectTo: '/monsters'
       });

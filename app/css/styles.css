@@ -330,9 +330,16 @@ section {
 
 /* * * * * * * * * * * * * * layout * * * * * * * * * * * * * */
 /* fullsize */
+@media only screen and (min-width: 600px) {
+  .outer-wrapper {
+    width: 90%;
+    margin: 20px auto 20px; } }
 /* mobile */
-/* * * * * * * * * * * * * * header * * * * * * * * * * * * * */
-/* * * * * * * * * * * * * * nav * * * * * * * * * * * * * */
-/* mobile */
-/* fullsize */
-/* * * * * * * * * * * * * * footer * * * * * * * * * * * * * */
+.detail-view li {
+  float: left; }
+  .detail-view li .image {
+    width: 200px;
+    height: 200px;
+    background: black no-repeat center;
+    background-size: cover;
+    margin: 0 20px 20px 0; }
