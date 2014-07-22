@@ -1,58 +1,36 @@
 
 $_avatarSize: 250px;
 $_thumbSize: 100px;
-$_iconSize: 50px;
+$_iconSize: 25px;
 
-.my-avatar {
-
-
+@mixin avatarSize($size) {
 	.initials {
-		width: $_avatarSize;
-		height: $_avatarSize;
-		line-height: $_avatarSize;
+		width: $size;
+		height: $size;
+		line-height: $size;
 		text-align: center;
-		font-size: $_avatarSize * 0.5;
+		font-size: $size * 0.3;
 		color: rgba(black, 0.2);
-		border: solid 2px white;
+		border: solid ceil($size * 0.01) white;
 	}
 
 	img {
-		width: $_avatarSize;
-		height: $_avatarSize;
-		border: solid 2px white;
+		width: $size;
+		height: $size;
+		border: solid ceil($size * 0.01) white;
 	}
+}
 
+.my-avatar {
+
+	@include avatarSize($_avatarSize);
 
 	&.thumb {
-		.initials {
-			width: $_thumbSize;
-			height: $_thumbSize;
-			line-height: $_thumbSize;
-			font-size: $_thumbSize * 0.5;
-			border-size: 1px;
-		}
-
-		img {
-			width: $_thumbSize;
-			height: $_thumbSize;
-			border-size: 1px;
-		}
+		@include avatarSize($_thumbSize);
 	}
 
 
 	&.icon {
-		.initials {
-			width: $_iconSize;
-			height: $_iconSize;
-			line-height: $_iconSize;
-			font-size: $_iconSize * 0.5;
-			border-size: 1px;
-		}
-
-		img {
-			width: $_iconSize;
-			height: $_iconSize;
-			border-size: 1px;
-		}
+		@include avatarSize($_iconSize);
 	}
 }
