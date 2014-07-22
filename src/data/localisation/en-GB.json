@@ -1,0 +1,15 @@
+{
+	"localisation_keyMissing"         : "Localisation key missing: \"#{key}\" (#{locale})",
+	"myApp_localisationInitSuccess"   : "Localisation Service initialised",
+	"myViewDetail_heading"            : "#{name}",
+	"myViewDetail_labelName"          : "Who",
+	"myViewDetail_labelWhere"         : "Where",
+	"myViewDetail_labelAvatar"        : "Avatar URL",
+	"myViewDetail_buttonUpdate"       : "Update",
+	"myViewMain_heading"              : "Monsters",
+	"myViewMain_createNew"            : "Add a new creature",
+	"myViewMain_labelName"            : "Name",
+	"myViewMain_labelWhere"           : "From where?",
+	"myViewMain_buttonCreate"         : "Add",
+	"myViewMain_listHeading"          : "Current list of monsters:"
+}

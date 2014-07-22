@@ -1,0 +1,58 @@
+
+$_avatarSize: 250px;
+$_thumbSize: 100px;
+$_iconSize: 50px;
+
+.my-avatar {
+
+
+	.initials {
+		width: $_avatarSize;
+		height: $_avatarSize;
+		line-height: $_avatarSize;
+		text-align: center;
+		font-size: $_avatarSize * 0.5;
+		color: rgba(black, 0.2);
+		border: solid 2px white;
+	}
+
+	img {
+		width: $_avatarSize;
+		height: $_avatarSize;
+		border: solid 2px white;
+	}
+
+
+	&.thumb {
+		.initials {
+			width: $_thumbSize;
+			height: $_thumbSize;
+			line-height: $_thumbSize;
+			font-size: $_thumbSize * 0.5;
+			border-size: 1px;
+		}
+
+		img {
+			width: $_thumbSize;
+			height: $_thumbSize;
+			border-size: 1px;
+		}
+	}
+
+
+	&.icon {
+		.initials {
+			width: $_iconSize;
+			height: $_iconSize;
+			line-height: $_iconSize;
+			font-size: $_iconSize * 0.5;
+			border-size: 1px;
+		}
+
+		img {
+			width: $_iconSize;
+			height: $_iconSize;
+			border-size: 1px;
+		}
+	}
+}
